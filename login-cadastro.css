@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+:root {--color-white: #fff;
+    --color-write2: #e6e6e6;
+    --color-write3:#cccccc;
+    --color-write4:#f2f2f2;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #b040ff;
+    --color-purple2: #9b0dff;
+    --color-purple3: #8e00f3;
+    --color-red:#e60000;
+    --color-red2:#ff1a1a;
+     --color-red3:#cc0000;
+    --color-red4: #b30000;
+    --color-red5:#9a0000;
+    --color-red6:#ff6767;
+    --color-green:#00ce45;
+    --color-green2:#00b43c;
+    --color-green4:#009b34;
+    --color-green3:#00e74d;
+    --color-green5:#008000;
+    --color-green6:#004d00;
+    
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-red2) ;
+    transition: 1s;
+}
+
+.slide {
+    background: var(--color-green) ;
+}
+
+.containerLogin { 
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: var(--color-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 20px var(--color-red5);
+}
+
+.containerLogin .box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+   
+}
+
+.containerLogin .box  h2 {
+ color: var(--color-white);
+ font-size: 1.2em;
+ font-weight: 500;
+ margin-bottom: 10px;
+ font-weight: bold
+}
+
+.containerLogin .box button { /*botão entrar e cadastro*/
+    cursor: pointer;
+    padding: 10px 20px;
+    background: var(--color-white);
+    color: var(--color-dark2);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    
+    outline: none;
+}
+
+
+.formBox {
+    left: 50px;
+    position: absolute;
+    width: 340px;
+    height: 500px;
+    background: var(--color-white);
+    z-index: 1000;
+    box-shadow: 0 5px 20px var(--color-red5);
+    transition: 1s;
+    overflow: hidden;
+}
+
+.slide .formBox {
+    left: 400px;
+    box-shadow: 0 5px 20px var(--color-green6);
+    transition: 1s;
+    
+}
+.slide .containerLogin {
+    box-shadow: 0 5px 20px var(--color-green6);
+    transition: 1s;
+}
+.slide .box {
+    background:var(--color-green4);
+    transition: 1s;
+    
+}
+
+.formBox .form {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+background: var(--color-white);
+}
+
+.formBox .form.signupform {
+left:100%;
+transition-delay: 0s;
+}
+.slide .formBox .form.signupform {
+    right:0;
+    transition-delay: 0.1s;
+    }
+
+
+.formBox .form.signinform {
+    left:0;
+    transition-delay: 0;
+    }
+
+    .slide .formBox .form.signinform {
+    left:-100%;
+   transition-delay: 0.1s;
+    }
+
+.formBox .form form {
+    display:flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.formBox .form form h3 {
+    font-size: 1.4em;
+    color: var(--color-dark4);
+    margin-bottom:20px;
+    font-weight: 600;
+}
+
+.formBox .form form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding:12px;
+    outline: none;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    border: 1px solid var(--color-dark3);
+}
+
+.formBox .form form .botaologar {
+    background: var(--color-red2);
+    border:none;
+    max-width: 100px;
+    color:var(--color-white);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.formBox .form form .botaocadastrar {
+    background: var(--color-green2);
+    border:none;
+    max-width: 100px;
+    color:var(--color-white);
+    font-weight: 100;
+    cursor: pointer;
+
+}

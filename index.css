@@ -1,0 +1,470 @@
+*{ margin: 0;
+  padding: 0
+}
+/* canselar css */
+:root {--color-white: #fff;
+  --color-write2: #e6e6e6;
+  --color-write3:#cccccc;
+  --color-write4:#f2f2f2;
+  --color-dark1: #272727;
+  --color-dark2: #2d2d2d;
+  --color-dark3: #414141;
+  --color-dark4: #1c1c1c;
+  --color-dark5: #343434;
+  --color-purple: #b040ff;
+  --color-purple2: #9b0dff;
+  --color-purple3: #8e00f3;
+  --color-red:#e60000;
+  --color-red2:#ff1a1a;
+   --color-red3:#cc0000;
+  --color-red4: #b30000;
+  --color-red5:#9a0000;
+  --color-red6:#ff6767;
+  --color-green:#00ce45;
+  --color-green2:#00b43c;
+  --color-green3:#009b34;
+  --color-green4:#00e74d;
+  --color-green5:#008000;
+  --color-green6:#004d00;
+  
+}
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-write);
+    
+     }
+
+     .logo_header {
+      width: 45px;
+     }
+
+     
+     .header, .navegacao-header, .login-cadastro, .login-cadastro2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+     }
+
+
+     .header {
+     background-color: var(--color-red);
+     height: 75px;
+     justify-content: space-between;
+     padding: 0 10%;
+     }
+
+     .navegacao-header, .login-cadastro2 {
+      gap: 3em;
+      z-index: 2;
+     }
+     .navegacao-header a {
+      text-decoration: none;
+      color: var(--color-white);
+      transition: 1s;
+      font-weight: bold;
+    
+     }
+
+     .menu-header {  /*botao home*/
+      
+      padding: 10px;
+      border-radius: 20px;
+     }
+
+     .menu-header:hover {
+     
+      transition: 0.2s;
+      color: var(--color-red6);
+    
+     }
+
+     .menu-header:active {
+      
+      transition: 0.1s;
+      
+     } /*fim do botão home*/
+    
+
+     .receitas-header { /* botao de receitas*/
+      padding: 10px;
+      border-radius: 20px;
+     } /**/
+     .receitas-header:hover {
+      transition: 0.2s;
+      color: var(--color-red6);
+  
+     }
+     .receitas-header:active {
+
+      transition: 0.1s;
+     }
+         /*fim do botão de receitas*/
+
+         .sobrenos-header { /* botao sobre nós*/
+          padding: 10px;
+          border-radius: 20px;
+         } /**/
+         .sobrenos-header:hover {
+
+          transition: 0.2s;
+          color: var(--color-red6);
+         
+         }
+         .sobrenos-header:active {
+    
+          transition: 0.1s;
+         }
+             /*fim do botão sobre nós*/
+
+           .contato-header { /* botao contato*/
+         
+          padding: 10px;
+          border-radius: 20px;
+         } 
+
+         .contato-header:hover {
+        
+          transition: 0.2s;
+          color: var(--color-red6);
+
+         }
+
+         .contato-header:active {
+          
+          transition: 0.1s;
+         }
+             /*fim do botão contato*/
+
+    
+
+     .login-cadastro {
+      justify-content:end;
+      gap: 1em;
+     }
+
+
+     
+     
+     
+
+     .botao {
+      border: none;
+      padding: 6px;
+      width: 100px;
+      background-color: var(--color-green);
+      border-radius: 2px;
+      cursor:pointer;
+      transition: 1s;
+      box-shadow: 1px 1px 4px var(--color-red3) ;
+     }
+
+     .botao:hover {
+      background-color: var(--color-green2);
+      transition: 0.2s;
+      color: var(--color-white);
+      padding: 7px 7px 7px 7px;
+     }
+     .botao:active {
+      background-color: var(--color-red5);
+      transition: 0.1s;
+     }
+     .botao {
+      color: var(--color-white);
+      text-decoration: none;
+      font-weight: bold;
+     }
+   
+
+
+     
+     .btn-icon-header {
+      border: none;
+      background-color: transparent;
+      color: var(--color-white);
+      cursor: pointer;
+      display: none; 
+     }
+
+
+     @media screen and (max-width: 768px) {
+      .btn-icon-header {
+        display: block;
+      }
+      .navegacao-header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--color-red2);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw; 
+       
+
+      }
+
+      
+     }
+
+     @keyframes showSidebar {
+      from {margin-left: -100vw;}
+      top {margin-left: -10vw;}
+     }
+
+
+
+ 
+     .content {
+      
+      padding: 10px;
+      height: 100vw;
+      border: none;
+     
+     }
+     
+     h1 {
+      background-color: var(--color-green3);
+      width: 130px;
+      height: 40px;
+      padding: 10px;
+      border: none;
+      box-shadow: 0px 0px 15px  var(--color-green4);
+      border-radius: 10px;
+      display: flex;
+      color: var(--color-white);
+     }
+  
+
+
+   .hr1 {
+    border: 1px solid;
+    margin-top: 10px;
+    color: var(--color-red);
+    background-color: var(--color-red);
+    
+   }
+
+
+
+  
+
+   
+
+
+
+
+
+   
+   
+
+
+   
+
+
+   .link-veja {
+  margin-top: 15px;
+   }
+   .link-veja a{
+    text-decoration: none;
+   }
+
+  
+
+   .pizza-header {
+  height:  100px;
+  width: 130px;
+  display: flex;
+  border-radius: 30px;
+  transition: 1s;
+  }
+
+.tipos-receitas {
+  border:none;
+}
+
+
+
+.imagem-culinaria {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 120px;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+  transition: 2s;
+}
+ .imagem-culinaria:hover {
+  box-shadow: 0px 0px 10px 0px var(--color-write3);
+  transition: 0.3s;
+  font-size: 16.5px;
+  font-weight: bold;
+  border: none;
+  padding: 11px 21px 1px 21px;
+}
+  .imagem-culinaria:active{  
+         transition: 0.1s;
+  }
+
+  .imagem-culinaria:hover .pizza-header {
+    height:  101px;
+    width: 131px;
+    display: flex;
+    border-radius: 30px;
+    transition: 1s;
+  }
+
+.imagem-culinaria2 {
+  display: inline-block;
+  overflow: hidden; 
+  margin-top: 50px;
+  padding-left: 35px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 120px;
+ padding-top: 10px;
+ transition: 1s;
+}
+
+.imagem-culinaria2:hover {
+  box-shadow: 0px 0px 10px 0px var(--color-write3);
+  transition: 0.3s;
+  font-size: 16.5px;
+  border: none;
+  padding: 11px 21px 1px 36px;
+}
+
+.imagem-culinaria2:hover .pizza-header {
+  height:  105px;
+  width: 131px;
+  display: flex;
+  border-radius: 30px;
+  transition: 1s;
+}
+.imagem-culinaria h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 6px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 15px;
+  justify-content: center;
+  border: none;
+  color: var(--color-dark3);
+ }
+ 
+ 
+
+
+ .imagem-culinaria2 h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-left: -20px;
+  margin-top: 6px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 150px;
+  height: 15px;
+  justify-content: center;
+  border: none;
+  color: var(--color-dark3);
+}
+
+div h3 {
+  display:inline-block;
+  
+}
+
+.italiana {
+margin-left: 150px;
+}
+
+.italiana2 {
+  margin-left: 140px;
+}
+
+
+.ravioli {
+  display: flex;
+  margin-left: 50px;
+}
+
+.mais-acessadas h3 {
+  color:var(--color-green3);
+}
+
+.galery {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+
+#galery1 {
+ background: url(imagemfundo2.jpg)center ;
+ background-repeat: no-repeat;
+ background-size: 1600px;
+ background-position: bottom  ;
+ border: none;
+ width: 98.9vw;
+ height: 620px;
+ flex-direction: right;
+}
+
+.description {
+  display: flex;
+  margin-top: 0.5px;
+  border: none;
+  text-align: center;
+  margin-left: 100px;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url();
+}
+h4 {
+  margin-left: 250px;
+  width: 750px;
+  margin-top: 230px;
+  padding: 20px;
+  text-align: center;
+  font-style: normal;
+  font-size: 46px;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .texto-inicio {
+    display: block;
+    width: 500px;
+  padding: 20px;
+  animation-duration: 1s;
+  margin-top: 200px;
+  margin-left: 10px;
+  margin-right: 100px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+}
+
+
+.outro-conteudo {
+  padding: 10px;
+  height: 300px;
+  margin-top: 500px;
+  border: none;
+}
