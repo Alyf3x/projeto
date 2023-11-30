@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="PT-BR">
+    <head>
+         <meat charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Olá mundo</title>
+          <link rel="stylesheet" href=/css/receitas.css>
+          <script src="/javascript/index.js" defer></script>
+    </head>
+        
+        <body>
+          
+          <div class="header" id="header"><!--cabeçalho-->
+             <button onclick="toogleSidebar()"  class="btn-icon-header">  <!--botao icone-->
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+               </svg>
+             </button><!--fim do botao icone-->
+
+
+           <div class="logo_header"><!--logo-->
+ 
+            <img src="/imagens/logo3.png" class="logo_header" alt="logo_header">
+           </div><!--fim da logo-->
+
+
+           <div class="navegacao-header" id="navegacao-header"> <!--navagação-->
+                <button onclick="toogleSidebar()" class="btn-icon-header"><!--botao icone-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+                     <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                  </svg>
+               </button><!--fim do botão icone-->
+      
+                 <a href="/html/index.html" class="menu-header" rel="prev">HOME</a>
+                
+<div class="dropdown">
+  <a  class="receitas-header">RECEITAS<svg class="botao-receitas" class="botao-receitas" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+  </svg></a>
+     
+    <div class="dropdown-menu">
+      <a href="/html/inicio-caseira.html"rel="next">Caseira</a>
+      <a href="/html/inicio-sobremesas.html"rel="next">Sobremesa</a>
+      <a href="/html/receitas-pizzas.html"rel="next">Pizza</a>
+      <a href="/html/vegetariana.html" rel="next">Vegetariana</a>
+      
+    </div>
+</div>
+
+<a href="index.html#sobre-nos"class="sobrenos-header"rel="prev">SOBRE NÓS</a>
+<a href="index.html#contato" class="contato-header"rel="prev">CONTATO</a>
+         </div> <!--fim da navegação-->
+
+
+             <div class="login-cadastro" > <!--login e cadastro-->
+
+                <div class="login-button" id="login-button"> <!--botão de login-->
+                  <a href="login-cadastro.html"><button class="botao" id="botao">ENTRAR</button></a>
+                </div> <!--fim do botão de login-->
+          
+                <div class="cadastrar-button"><!--botão de cadastro-->
+                   <a href="cadastro2.html"><button class="botao">CADASTRO</button></a>
+                </div><!--fim do botao de cadastro-->
+              
+            </div><!--fim do login e cadastro-->
+            
+          </div> <!--fim do cabeçalho-->
+         
+    <section class="galery" id="galery1">
+        <aside class="description"><h4 class="texto-inicio"><li>CASEIRAS<li>O gostinho da Italia no seu prato</h4></aside>
+       </section>
+  
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content"> <!--conteudo do site-->
+   <div class="content">
+  
+  
+  
+      
+      
+      <section class="cardapio" id="cardapio">
+        
+    
+        <div class="itens-cardapio">
+          <div class="Pizza Margherita">
+         
+            <div class="info">
+                <h1>Carbonara</h1>
+              <div class="container">
+                
+                <p>A carbonara é um prato tradicional italiano feito com carne de porco, ovos, queijo e manteiga. A versão
+                    mais simples é feita com pancetta (porção de perna de porco cozida) em vez de bacon.</p>
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>250 g de pancetta (ou bacon) cortada em cubos</li>
+                    <li>150 g de queijo pecorino ralado grosso</li>
+                    <li>1 litro de leite</li>
+                    <li>3 dentes de alho triturados</li>
+                    <li>Sal e pimenta negra a gosto</li>
+                    <li>2 colheres (sopa) de manteiga</li>
+                    <li>6 ovos</li>
+                    <li>50 g de queijo grana padano ralado</li>
+    
+      
+              
+              </ul>
+          
+
+
+
+                <h3>Modo de preparo</h3>
+                <ol class="recipe-steps">
+                    <li class="recipe-step">Em uma frigideira, derreta a manteiga a fogo baixo. Tempere o alho com sal e
+                        pimenta negra a gosto e refogue-o na<br> manteiga por cerca de 5 minutos, mexendo ocasionalmente.</li>
+                      <li class="recipe-step">Retire a frigideira do fogo e despeje a manteiga esfriada na panela de fundo,
+                        reservando o óleo derretido na frigideira.</li>
+                      <li class="recipe-step">Numa tigela, bata os ovos com uma colher de sopa de açúcar, o queijo pecorino
+                        ralado grosso e um pouco de sal. Ao queijo deve estar completamente misturado, reserve.</li>
+                      <li class="recipe-step">No mesmo prato onde misturou os ovos, coloque uma quantidade igual de pancetta e
+                        um pouco de óleo derretido na frigideira. Refogue-a em fogo baixo até ficar dourada e doura,
+                        removendo-a para uma assadeira para que ela fique de fora.</li>
+                      <li class="recipe-step">Coloque uma quantidade de pancetta no prato com os ovos, a mistura de queijo e
+                        sal, e as costas dos ovos para cima. Tempere com pimenta negra a gosto e deixe repousar por 5 minutos.
+                      </li>
+                      <li class="recipe-step">Transfira a carbonara para um forno grelhado a 200°C (390°F).</li>
+                      <li class="recipe-step">Por fim, tempere com queijo grana padano ralado e aproveite.</li>
+      
+               </ol>  
+              </div>
+    
+            </div>
+           
+    
+              </div>
+             
+                   
+                 </div>
+
+</body>
+                 </html>

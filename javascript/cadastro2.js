@@ -13,3 +13,9 @@ loginBnt.onclick = function() {
     body.classList.add ('slide');
     
    }
+
+let cadastro = document.querySelector('.botaocadastrar');
+
+botaocadastrar.onclick = function() {
+    window.open("/html/index.html")
+}

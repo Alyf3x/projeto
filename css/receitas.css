@@ -1,0 +1,586 @@
+*{ margin: 0;
+    padding: 0;
+  }
+  /* canselar css */
+  :root {--color-white: #fff;
+    --color-write2: #e6e6e6;
+    --color-write3:#cccccc;
+    --color-write4:#f2f2f2;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #b040ff;
+    --color-purple2: #9b0dff;
+    --color-purple3: #8e00f3;
+    --color-red:#e60000;
+    --color-red2:#ff1a1a;
+     --color-red3:#cc0000;
+    --color-red4: #b30000;
+    --color-red5:#9a0000;
+    --color-red6:#ff6767;
+    --color-green:#00ce45;
+    --color-green2:#00b43c;
+    --color-green3:#009b34;
+    --color-green4:#00e74d;
+    --color-green5:#008000;
+    --color-green6:#004d00;
+    --color-red7:#ff0116;
+  }
+  
+  
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--color-write);
+      
+       }
+  
+       .logo_header {
+        width: 290px;
+        height: 140px;
+        margin-right: -100px;
+       }
+  
+       
+       .header, .navegacao-header, .login-cadastro, .login-cadastro2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       }
+  
+  
+       .header {
+        width: 1250px;
+        z-index: 3;
+       position: fixed;
+       background-color: var(--color-red7);
+       height: 75px;
+       justify-content: space-between;
+       padding: 0 10%;
+       margin-top: -0.5px;
+       }
+  
+       .navegacao-header, .login-cadastro2 {
+        gap: 3em;
+        z-index: 2;
+       }
+       .navegacao-header a {
+        text-decoration: none;
+        color: var(--color-white);
+        transition: 1s;
+        font-weight: bold;
+      
+       }
+  
+       .menu-header {  /*botao home*/
+        
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 14px;
+       }
+  
+       .menu-header:hover {
+       
+        transition: 0.2s;
+        color: var(--color-red6);
+      
+       }
+  
+       .menu-header:active {
+        
+        transition: 0.1s;
+        
+       } /*fim do botão home*/
+      
+  
+  
+  
+  
+  
+  
+       .receitas-header { /* botao de receitas*/
+        border:none;
+        padding: 6px;
+        width: 100px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 67px;
+        padding-bottom: 28px;
+        background-color:var(--color-red7);
+        border-radius: 2px;
+        cursor:default;
+        transition: 1s;
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: -60px;
+        margin-left: -40px;
+       } 
+  
+       .receitas-header:hover {
+      
+        color: var(--color-red6);
+    
+       }
+       .receitas-header:active {
+  
+        transition: 0.1s;
+       }
+   
+  
+    .dropdown-menu {
+  
+    background-color: var(--color-red6);
+    position:absolute;
+    width: 150px;
+    height: 110px;
+    padding-top: 10px;
+    padding-left:15px;
+    margin-left: -10px;
+    top:-100px;
+    overflow: hidden;
+    text-decoration: none;
+   
+    z-index: -1;
+    }
+  
+  
+  .dropdown-menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    display: block;
+    position: relative;
+  }
+       
+  
+       .dropdown:hover .dropdown-menu {
+  display: block;
+  transition:1s;
+  transform: translateY(175px); 
+       }
+  
+      .dropdown-menu a:hover {
+        color: var(--color-write3);
+    
+       }
+  
+       .dropdown:hover .botao-receitas {
+       transform: rotate(-85deg); 
+       color: var(--color-red6);
+      }
+ 
+      .dropdown:hover .receitas-header {
+       color: var(--color-red6);
+      }
+       .botao-receitas {
+        width: 25px;
+        font-size: larger;
+        font-weight: bold;
+        padding-top: -100px;
+        margin-bottom: -2px;
+       }
+      
+      
+       .receitas-header:hover .botao-receitas {
+       transform: rotate(-85deg);
+       transition: 0.5s;
+       color: var(--color-red6);
+       
+      }
+      
+           /*fim do botão de receitas*/
+  
+       .sobrenos-header { /* botao sobre nós*/
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 14px;
+           }
+  
+       .sobrenos-header:hover {
+  
+       transition: 0.2s;
+       color: var(--color-red6);
+           
+        }
+  
+       .sobrenos-header:active {
+        transition: 0.1s;
+        }
+        /*fim do botão sobre nós*/
+  
+            
+       .contato-header { /* botao contato*/
+           
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        } 
+  
+       .contato-header:hover {
+        transition: 0.2s;
+        color: var(--color-red6);
+  
+       }
+  
+       .contato-header:active {
+        transition: 0.1s;
+        }
+       /*fim do botão contato*/
+  
+      
+  
+  
+       .login-cadastro {
+        justify-content:end;
+        gap: 1em;
+       }
+      
+       .botao {
+        border: none;
+        padding: 6px;
+        width: 100px;
+        background-color: var(--color-green);
+        border-radius: 2px;
+        cursor:pointer;
+        transition: 1s;
+        box-shadow: 1px 1px 4px var(--color-red3) ;
+       }
+  
+       .botao:hover {
+        background-color: var(--color-green2);
+        transition: 0.2s;
+        color: var(--color-white);
+        padding: 7px 7px 7px 7px;
+       }
+       .botao:active {
+        background-color: var(--color-red5);
+        transition: 0.1s;
+       }
+       .botao {
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+       }
+     
+  
+  
+       
+       .btn-icon-header {
+        border: none;
+        background-color: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        display: none; 
+       }
+  
+  
+       @media screen and (max-width: 768px) {
+        .btn-icon-header {
+          display: block;
+        }
+        .navegacao-header {
+          position: absolute;
+          flex-direction: column;
+          top: 0;
+          background-color: var(--color-red2);
+          height: 100%;
+          width: 35vw;
+          padding: 1em;
+          animation-duration: 1s;
+          margin-left: -100vw; 
+         
+  
+        }
+  
+        
+       }
+  
+       @keyframes showSidebar {
+        from {margin-left: -100vw;}
+        top {margin-left: -10vw;}
+       }
+  
+       .galery {
+        width: 1000px;
+        height: 600px;
+        margin: auto;
+      }
+      
+      #galery1 {
+       background: url(/imagens/fundo-receitas.jpg)center ;
+       background-repeat: no-repeat;
+       background-size: 1600px;
+       background-position: top  ;
+       border: none;
+       width: 98.9vw;
+       height: 620px;
+       flex-direction: right;
+      }
+      
+      .description {
+        display: flex;
+        margin-top: 0.5px;
+        border: none;
+        text-align: center;
+        margin-left: -270px;
+        
+      }
+      
+      @font-face {
+        font-family: Gotham;
+        src: url();
+      }
+      h4 {
+       
+        width: 1000px;
+
+        
+        margin-top: 200px;
+        margin-left: 400px;
+
+
+        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 120px;
+        text-align: center;
+        font-style: normal;
+        font-size: 46px;
+        color: var(--color-white);
+        list-style: none;
+        border-radius: 5px;
+      }
+      .texto-inicio {
+      background-color: rgba(0, 0, 0, 0.2);
+      }
+      
+      @media screen and (max-width: 768px) {
+        .texto-inicio {
+          display: block;
+          width: 500px;
+        padding: 20px;
+        animation-duration: 1s;
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 100px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      
+      
+      }
+  
+   
+       .content
+            /* MENU */
+            
+          .botao-receitas{
+            display: flex;
+      border: 1px solid var(--color-dark4);
+      
+          }
+            
+            /* Primeita seção */
+            
+            .first-section {
+              height: 100vh;
+             
+              background-position: center center;
+              width: 100vw;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+  
+            .info {
+              width: 1000px;
+              margin-left:-265px ;
+              
+            }
+            
+            
+            .first-section .conteudo-principal {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            .first-section h1 {
+              color: green;
+              font-size: 3rem;
+              text-transform: uppercase;
+              margin-bottom: 1rem;
+              
+            }
+            
+            .first-section h2 {
+              color: white;
+              font-size: 2rem;
+              font-weight: 400;
+              text-transform: uppercase;
+              margin-bottom: 3rem;
+            }
+            
+            .btn button {
+              width: 230px;
+              height: 60px;
+              cursor: pointer;
+              text-transform: uppercase;
+              background-color: red;
+              border-radius: 10px;
+              color: white;
+              font-weight: 700;
+              margin-top: 5rem;
+              transition: all 400ms ease-in;
+            }
+            
+            /* Curiosidades */
+            
+         
+            /* Pratos */
+            
+            .cardapio {
+              width: 90vw;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              background-image: var(--color-white);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+              margin-left: 100px;
+            }
+            .cardapio1 {
+              width: 90vw;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              background-image: var(--color-white);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+              margin-left: 100px;
+            }
+            .cardapio h2 {
+              font-size: 5rem;
+              color: white;
+              text-transform: uppercase;
+            }
+            
+            .itens-cardapio {
+              width: 80%;
+              margin-left: 150px;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              display: grid;
+             
+              justify-content: center;
+              align-items: center;
+              gap: 30px;
+            }
+            
+            .itens-cardapio .info {
+              background-color: white;
+              border: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 1.5rem;
+              
+            }
+            .itens-cardapio .info h1 {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                text-decoration: none;
+                box-shadow: 1px 4px 9px var(--color-write3);
+                padding: 10px;
+                border-radius: 5px;
+                color: var(--color-green3);
+              }
+              .itens-cardapio .info p {
+                color:var(--color-white);
+                list-style: none;
+                margin-left:35px;
+                margin-top: 30px;
+              }
+            
+            
+            .itens-cardapio .info h3 {
+              font-size: 1.6rem;
+              text-transform: uppercase;
+              margin-bottom: 1rem;
+              text-decoration: none;
+              text-align: center;
+
+              background-color: var(--color-white);
+              color: var(--color-green2);
+
+              border-radius: 5px;
+              padding-left: 40px;
+              padding-right: 50px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              box-shadow: 1px 1px 20px var(--color-red);
+
+              margin-top:20px ;
+              margin-left: 100px;
+              margin-right: 400px;
+            }
+            
+            .itens-cardapio .info h4 {
+              font-size: 1.4rem;
+              text-transform: uppercase;
+              margin-bottom: 0.6rem;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              grid-template-columns: 150px 150px;
+              margin-left: 6rem;
+            }
+            
+            .itens-cardapio .info h4 span {
+              font-size: 1.6rem;
+              color: var(--color-dark4);
+              margin-left: 1.5rem;
+              text-decoration: underline;
+            }
+            
+            .itens-cardapio div {
+              background-color:var(--color-red7);
+              box-shadow: 0px 0px 4px 1px;
+            }
+            
+            .itens-cardapio img {
+              width: 100%;
+              height:200px;
+            }
+
+
+        .container {
+            height: 910px;
+        }
+        .container1 {
+          height: 1400px;
+      }
+
+
+        .recipe-step, li {
+            color: var(--color-white);
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        
